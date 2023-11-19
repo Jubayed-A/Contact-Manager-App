@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "672144718107",
+    "firebase_url": "https://contact-manager-app-b5e1e-default-rtdb.firebaseio.com",
+    "project_id": "contact-manager-app-b5e1e",
+    "storage_bucket": "contact-manager-app-b5e1e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:672144718107:android:9650603ca6ee76ef6abbbe",
+        "android_client_info": {
+          "package_name": "com.example.contactmanagerapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqYdJVPm7GJ3cHvlfIEtU0wlGU4Hfy8C4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

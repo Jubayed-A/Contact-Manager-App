@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contact Information"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:padding="20dp"
+        android:textStyle="bold"
+        android:background="@color/yellow"
+        android:textColor="@color/black"
+        tools:ignore="HardcodedText" />
+
+    <!-- This is Name input section -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:hintTextColor="@color/black"
+        android:padding="10dp"
+        app:startIconDrawable="@drawable/person_logo"
+        app:boxStrokeColor="@color/yellow"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Name "
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:inputType="text"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- This is User ID input section -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:hintTextColor="@color/black"
+        android:padding="10dp"
+        app:startIconDrawable="@drawable/person_logo"
+        app:boxStrokeColor="@color/yellow"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etUserID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your User ID"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:inputType="text"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- This is Email input section -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxStrokeColor="@color/yellow"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:hintTextColor="@color/black"
+        android:padding="10dp"
+        app:startIconDrawable="@drawable/email_logo"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Email Address"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:inputType="textEmailAddress"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- This is User ID input section -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:hintTextColor="@color/black"
+        android:padding="10dp"
+        app:startIconDrawable="@drawable/phone_num"
+        app:boxStrokeColor="@color/yellow"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Phone Number "
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:inputType="phone"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--  Sign Up button code here  -->
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="SIGN UP"
+        android:layout_gravity="center"
+        android:textSize="25sp"
+        android:padding="10dp"
+        android:backgroundTint="@color/yellow"
+        android:textColor="@color/black"
+        />
+
+    <!--have an account code here-->
+    <TextView
+        android:id="@+id/showContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:background="@color/yellow"
+        android:textColor="@color/black"
+        android:text="Show All Contact List"
+        android:textSize="18sp" />
+
+</LinearLayout>

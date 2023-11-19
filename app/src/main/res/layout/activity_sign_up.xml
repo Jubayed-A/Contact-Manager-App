@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/signup_screen"
+    tools:context=".SignUpActivity">
+
+    <!-- This is Name input section -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        app:hintTextColor="@color/black"
+        android:padding="5dp"
+        app:startIconDrawable="@drawable/person_logo"
+        app:boxStrokeColor="@color/yellow"
+        >
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Name "
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:inputType="text"
+        />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- This is User ID input section -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        app:hintTextColor="@color/black"
+        android:padding="5dp"
+        app:startIconDrawable="@drawable/person_logo"
+        app:boxStrokeColor="@color/yellow"
+        >
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etUserID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your User ID"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:inputType="text"
+        />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- This is Email input section -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        app:hintTextColor="@color/black"
+        android:padding="5dp"
+        app:startIconDrawable="@drawable/email_logo"
+        app:boxStrokeColor="@color/yellow"
+        >
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Email Address"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:inputType="textEmailAddress"
+        />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- This is password input section -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        app:hintTextColor="@color/black"
+        android:padding="5dp"
+        app:startIconDrawable="@drawable/password_logo"
+        app:endIconMode="password_toggle"
+        app:boxStrokeColor="@color/yellow"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Password"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:inputType="textPassword"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--  Sign Up button code here  -->
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/yellow"
+        android:padding="10dp"
+        android:text="SIGN UP"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <!--have an account code here-->
+    <TextView
+        android:id="@+id/haveAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:background="@color/yellow"
+        android:textColor="@color/black"
+        android:text="If You Alredy Sign Up then SIGN IN"
+        android:textSize="16sp" />
+
+</LinearLayout>
