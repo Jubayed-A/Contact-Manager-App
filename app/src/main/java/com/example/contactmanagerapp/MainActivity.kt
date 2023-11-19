@@ -99,17 +99,7 @@ class MainActivity : AppCompatActivity() {
                 startActivity(intentContact)
             }else{
 //                Toast.makeText(this, "User does not exit, Please sign up first", Toast.LENGTH_SHORT).show()
-                val nameShow = it.child("name").value
-                val mailShow = it.child("mail").value
-                val phoneShow = it.child("phone").value
-                val userIdShow = it.child("userId").value
-                // new intent open
-                val intentContact = Intent(this, ContactListActivity::class.java)
-                intentContact.putExtra(KEY1, name.toString())
-                intentContact.putExtra(KEY2, mail.toString())
-                intentContact.putExtra(KEY3, phone.toString())
-                intentContact.putExtra(KEY4, userId.toString())
-                startActivity(intentContact)
+
             }
         }.addOnFailureListener {
             Toast.makeText(this, "Failed", Toast.LENGTH_SHORT).show()
